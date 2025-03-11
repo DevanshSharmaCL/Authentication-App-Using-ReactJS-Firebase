@@ -1,0 +1,89 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Full Page Styling */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('Purple\ Mountain.PNG') no-repeat center center/cover;
+    position: relative;
+  }
+  
+  /* Background Blur Effect */
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+    backdrop-filter: blur(10px);
+    z-index: -1;
+  }
+  
+  /* Sign-Up Form */
+  form {
+    background: rgba(255, 255, 255, 0.15); /* Transparent White */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+    color: white;
+    backdrop-filter: blur(8px);
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  /* Input Fields */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 1rem;
+    color: white;
+  }
+  
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Submit Button */
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  /* Success & Error Message */
+  p {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
