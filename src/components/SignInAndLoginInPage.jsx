@@ -29,7 +29,7 @@ const AuthPage = () => {
         e.preventDefault();
         setMessage('');
         try {
-            const userCredentials = await signInWithEmailAndPassword(auth, email, password);;
+            const userCredentials = await signInWithEmailAndPassword(auth, email, password);
             setUser(userCredentials.user);
             setMessage(`✅ Logged in successfully! Welcome back, ${userCredentials.user.email}`);
         } catch (error) {
